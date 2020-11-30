@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saikou Mangas</title>
+    <link rel="icon" href="img/icn.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cadastro_login.css">
+    <script src="JavaScript/index.js"></script>
+    <script type="text/javascript" src="funcoes.js"></script>
+    <script src="https://kit.fontawesome.com/48b24e7021.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url(img/zr1.jpg);
+            background-attachment: fixed;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <title>Saikou Mangás</title>
+</head>
+
+<script>
+    let usuario;
+
+    verificar_autenticacao();
+
+
+</script>
+
+<body onload="verificar_autenticacao()">
+
+    
+    <div class="begin" id="begin-site">
+        <div class="container">
+            <div class="site-name">
+                <a href="index.html">
+                    <h1>Saikou mangas</h1>
+                </a>
+
+            </div>
+            <div class="site-links">
+                <ul>
+                    <li>Olá, <b id="b_usuario"></b></li>
+                    <li><a href="" onclick="logoff()">LOGOUT</a></li <li><a class="links-site"
+                        href="index.html">Inicio</a></li>
+                    <li><a class="links-site" href="all_mangas.html">Mangás</a></li>
+                    <li><a class="links-site" href="cadastro.html">Cadastro</a></li>
+                    <li><a class="links-site" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h2># Boku no Hero Academia</h2>
+    <div class="tools">
+        <select id="chapters" onchange="chose()">
+            <option value="slc">Selecione um captulo</option>
+            <option value="bnacap1">Captulo 01</option>
+            <option value="bnacap2">Captulo 02</option>
+            <option value="bnacap3">Captulo 03</option>
+            <option value="bnacap4">Captulo 04</option>
+            <option value="bnacap5">Captulo 05</option>
+        </select>
+        <div class="manga-pages" id="read_m1">
+            <center id="exib">
+            </center>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Saikou Mangás</h2>
+    </div>
+
+</body>
+
+</html>

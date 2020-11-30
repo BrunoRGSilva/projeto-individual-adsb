@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saikou Mangas</title>
+    <link rel="icon" href="img/icn.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cadastro_login.css">
+    <script src="JavaScript/index.js"></script>
+    <script src="https://kit.fontawesome.com/48b24e7021.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url(img/zr1.jpg);
+            background-attachment: fixed;
+            background-size: 100%;
+            background-repeat: no-repeat;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="begin" id="begin-site">
+        <div class="container">
+            <div class="site-name">
+                <a href="index.html">
+                    <h1>Saikou mangas</h1>
+                </a>
+
+            </div>
+            <div class="site-links">
+                <ul>
+                    <li><a class="links-site" href="index.html">Inicio</a></li>
+                    <li><a class="links-site" href="all_mangas.html">Mangás</a></li>
+                    <li><a class="links-site" href="cadastro.html">Cadastro</a></li>
+                    <li><a class="links-site" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <center>
+        <div class="container_cl">
+            <h1>Faça seu cadastro aqui!</h1>
+            <div class="formulario">
+                <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+                    <label for="nome">Nome e sobrenome</label>
+                    <input type="text" name="nome" class="input_padrao" autofocus="autofocus"
+                        placeholder="Nome completo" required minlength="4">
+                    <label for="login">Login</label>
+                    <input type="text" name="login" class="input_padrao" placeholder="Usuário para login" required
+                        minlength="4">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" class="input_padrao" placeholder="**********" required
+                        minlength="4">
+                    <input type="submit" id="btn_entrar" value="Cadastrar" class="btn">
+                </form>
+                <div id="div_erro" style="background-color: #bf8899; color: maroon; display: none;">
+                    Erro no cadastro
+                </div>
+            </div>
+        </div>
+    </center>
+
+
+    <div class="footer">
+        <h2>Saikou Mangás</h2>
+    </div>
+</body>
+
+</html>
+
+<script>
+
+    function cadastrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+            
+            if (response.ok) {
+
+                window.location.href='login.html';
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    div_erro.innerHTML = resposta;
+                });
+                finalizar_aguardar();
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        img_aguarde.style.display='block';
+        div_erro.style.display='none';
+    }
+
+    function finalizar_aguardar() {
+        btn_entrar.disabled = false;
+        img_aguarde.style.display='none';
+        div_erro.style.display='block';
+    }
+
+</script>
