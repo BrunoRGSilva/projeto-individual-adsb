@@ -25,10 +25,7 @@
     <div class="begin" id="begin-site">
         <div class="container">
             <div class="site-name">
-                <a href="index.html">
-                    <h1>Saikou mangas</h1>
-                </a>
-
+                <h1>Saikou <span>Mangás</span></h1>
             </div>
             <div class="site-links">
                 <ul>
@@ -40,8 +37,8 @@
             </div>
         </div>
     </div>
-    <center>
-        <div class="container_cl">
+    <div class="container_cl">
+        <div class="cadastro_page">
             <h1>Faça seu cadastro aqui!</h1>
             <div class="formulario">
                 <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
@@ -61,9 +58,7 @@
                 </div>
             </div>
         </div>
-    </center>
-
-
+    </div>
     <div class="footer">
         <h2>Saikou Mangás</h2>
     </div>
@@ -80,10 +75,10 @@
             method: "POST",
             body: formulario
         }).then(function (response) {
-            
+
             if (response.ok) {
 
-                window.location.href='login.html';
+                window.location.href = 'login.html';
 
             } else {
 
@@ -100,14 +95,14 @@
 
     function aguardar() {
         btn_entrar.disabled = true;
-        img_aguarde.style.display='block';
-        div_erro.style.display='none';
+        img_aguarde.style.display = 'block';
+        div_erro.style.display = 'none';
     }
 
     function finalizar_aguardar() {
         btn_entrar.disabled = false;
-        img_aguarde.style.display='none';
-        div_erro.style.display='block';
+        img_aguarde.style.display = 'none';
+        div_erro.style.display = 'block';
     }
 
 </script>
