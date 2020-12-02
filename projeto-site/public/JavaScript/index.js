@@ -357,7 +357,7 @@ function chosejuju() {
         exib3.innerHTML = "";
         exib4.innerHTML = "";
         exib5.innerHTML = "";
-        for (let index = 2; index < 52; index++) {
+        for (let index = 1; index < 52; index++) {
             img = document.createElement("img");
             img.src = "img/Mangas/Jujuts Kaisen/cap1/" + index + ".png";
             exib.appendChild(img);

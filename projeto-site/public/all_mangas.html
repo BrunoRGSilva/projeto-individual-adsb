@@ -19,10 +19,18 @@
             background-repeat: no-repeat;
         }
     </style>
-    <title>Saikou Mangas</title>
+    <title>Saikou Mangás</title>
 </head>
+<script>
+    let usuario;
 
-<body>
+    verificar_autenticacao();
+
+
+</script>   
+
+<body onload="verificar_autenticacao()">
+
     <div class="begin" id="begin-site">
         <div class="container">
             <div class="site-name">
@@ -30,6 +38,8 @@
             </div>
             <div class="site-links">
                 <ul>
+                    <li>Olá, <b id="b_usuario"></b></li>
+                    <li><a href="" onclick="logoff()">LOGOUT</a></li>
                     <li><a class="links-site" href="index.html">Inicio</a></li>
                     <li><a class="links-site" href="all_mangas.html">Mangás</a></li>
                     <li><a class="links-site" href="cadastro.html">Cadastro</a></li>
