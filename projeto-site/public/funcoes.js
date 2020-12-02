@@ -14,8 +14,10 @@ function verificar_autenticacao() {
     } else {
         b_usuario.innerHTML = nome_usuario;
         validar_sessao();
+        cadastro_cd.style.display = "none" ;
+        login_lo.style.display = "none";
     }
-    
+
 }
 
 function logoff() {
