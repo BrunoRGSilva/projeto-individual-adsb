@@ -2,9 +2,9 @@ let login_usuario;
 let nome_usuario;
 
 function redirecionar_login() {
-    if (nome_usuario == "") {
-        window.location.href = 'login.html';
-    }
+   
+     window.location.href = 'login.html';
+    
 }
 
 function verificar_autenticacao() {
