@@ -1,4 +1,3 @@
-
 // Área de leitura - funções //
 function choseop() {
     // Capitulo 1 One Piece
@@ -20,6 +19,7 @@ function choseop() {
     }
     // Capitulo 2 One Piece
     else if (chapters.value == "opcap2") {
+        
         let exib = document.getElementById("exib2");
         let img = document.createElement("img");
         img.src = "img/Mangas/One Piece/cap2/0.jpg";
