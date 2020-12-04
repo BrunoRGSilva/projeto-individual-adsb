@@ -19,7 +19,7 @@ function choseop() {
     }
     // Capitulo 2 One Piece
     else if (chapters.value == "opcap2") {
-        
+
         let exib = document.getElementById("exib2");
         let img = document.createElement("img");
         img.src = "img/Mangas/One Piece/cap2/0.jpg";
@@ -44,7 +44,7 @@ function choseop() {
         exib1.innerHTML = "";
         exib2.innerHTML = "";
         exib4.innerHTML = "";
-        exib5.innerHTML = ""; 
+        exib5.innerHTML = "";
         for (let index = 1; index < 23; index++) {
             img = document.createElement("img");
             img.src = "img/Mangas/One Piece/cap3/" + index + ".jpg";
@@ -130,7 +130,7 @@ function chosebna() {
         exib1.innerHTML = "";
         exib2.innerHTML = "";
         exib4.innerHTML = "";
-        exib5.innerHTML = ""; 
+        exib5.innerHTML = "";
         for (let index = 1; index < 23; index++) {
             img = document.createElement("img");
             img.src = "img/Mangas/Boku no Hero Academia/cap3/" + index + ".png";
@@ -217,7 +217,7 @@ function chosedb() {
         exib1.innerHTML = "";
         exib2.innerHTML = "";
         exib4.innerHTML = "";
-        exib5.innerHTML = ""; 
+        exib5.innerHTML = "";
         for (let index = 1; index < 15; index++) {
             img = document.createElement("img");
             img.src = "img/Mangas/Dragon Ball/cap3/" + index + ".png";
@@ -303,7 +303,7 @@ function chosefm() {
         exib1.innerHTML = "";
         exib2.innerHTML = "";
         exib4.innerHTML = "";
-        exib5.innerHTML = ""; 
+        exib5.innerHTML = "";
         for (let index = 1; index < 43; index++) {
             img = document.createElement("img");
             img.src = "img/Mangas/Fullmetal Alchemist/cap3/" + index + ".jpg";
@@ -338,7 +338,7 @@ function chosefm() {
         exib4.innerHTML = "";
         for (let index = 1; index < 47; index++) {
             img = document.createElement("img");
-            img.src = "img/Mangas/Fullmetal Alchemist/5/" + index + ".jpg";
+            img.src = "img/Mangas/Fullmetal Alchemist/cap5/" + index + ".jpg";
             exib.appendChild(img);
         }
     }
@@ -390,7 +390,7 @@ function chosejuju() {
         exib1.innerHTML = "";
         exib2.innerHTML = "";
         exib4.innerHTML = "";
-        exib5.innerHTML = ""; 
+        exib5.innerHTML = "";
         for (let index = 1; index < 23; index++) {
             img = document.createElement("img");
             img.src = "img/Mangas/Jujuts Kaisen/cap3/" + index + ".png";
@@ -445,7 +445,7 @@ function chosekm() {
         exib3.innerHTML = "";
         exib4.innerHTML = "";
         exib5.innerHTML = "";
-        for (let index = 2; index < 54; index++) {
+        for (let index = 1; index < 54; index++) {
             img = document.createElement("img");
             img.src = "img/Manga/Kimetsu no Yaiba/cap1/" + index + ".png";
             exib.appendChild(img);
@@ -478,7 +478,7 @@ function chosekm() {
         exib1.innerHTML = "";
         exib2.innerHTML = "";
         exib4.innerHTML = "";
-        exib5.innerHTML = ""; 
+        exib5.innerHTML = "";
         for (let index = 1; index < 24; index++) {
             img = document.createElement("img");
             img.src = "img/Manga/Kimetsu no Yaiba/cap3/" + index + ".png";
@@ -565,7 +565,7 @@ function chosent() {
         exib1.innerHTML = "";
         exib2.innerHTML = "";
         exib4.innerHTML = "";
-        exib5.innerHTML = ""; 
+        exib5.innerHTML = "";
         for (let index = 1; index < 23; index++) {
             img = document.createElement("img");
             img.src = "img/Mangas/Naruto/cap3/" + index + ".jpg";
@@ -652,7 +652,7 @@ function choseopm() {
         exib1.innerHTML = "";
         exib2.innerHTML = "";
         exib4.innerHTML = "";
-        exib5.innerHTML = ""; 
+        exib5.innerHTML = "";
         for (let index = 1; index < 22; index++) {
             img = document.createElement("img");
             img.src = "img/Mangas/One Punch Man/cap3/" + index + ".png";
@@ -696,9 +696,10 @@ function choseopm() {
 
 
 
-function choseskg() {
+function chosesgk() {
     // Capitulo 1 Shingeki no Kyojin
-    if (chapters.value == "skgcap1") {
+
+    if (chapters.value == "sgkcap1") {
         let exib = document.getElementById("exib1");
         let img = document.createElement("img");
         img.src = "img/Mangas/Shingeki no Kyojin/cap1/0.jpg";
@@ -712,10 +713,9 @@ function choseskg() {
             img.src = "img/Mangas/Shingeki no Kyojin/cap1/" + index + ".jpg";
             exib.appendChild(img);
         }
-
     }
     // Capitulo 2 Shingeki no Kyojin
-    else if (chapters.value == "skgcap2") {
+    else if (chapters.value == "sgkcap2") {
         let exib = document.getElementById("exib2");
         let img = document.createElement("img");
         img.src = "img/Mangas/Shingeki no Kyojin/cap2/0.jpg";
@@ -732,7 +732,7 @@ function choseskg() {
 
     }
     // Capitulo 3 Shingeki no Kyojin
-    else if (chapters.value == "skgcap3") {
+    else if (chapters.value == "sgkcap3") {
         let exib = document.getElementById("exib3");
         let img = document.createElement("img");
         img.src = "img/Mangas/Shingeki no Kyojin/cap3/0.jpg";
@@ -740,7 +740,7 @@ function choseskg() {
         exib1.innerHTML = "";
         exib2.innerHTML = "";
         exib4.innerHTML = "";
-        exib5.innerHTML = ""; 
+        exib5.innerHTML = "";
         for (let index = 1; index < 46; index++) {
             img = document.createElement("img");
             img.src = "img/Mangas/Shingeki no Kyojin/cap3/" + index + ".jpg";
@@ -748,7 +748,7 @@ function choseskg() {
         }
     }
     // Capitulo 4 Shingeki no Kyojin
-    else if (chapters.value == "skgcap4") {
+    else if (chapters.value == "sgkcap4") {
         let exib = document.getElementById("exib4");
         let img = document.createElement("img");
         img.src = "img/Mangas/Shingeki no Kyojin/cap4/0.jpg";
@@ -827,7 +827,7 @@ function choseyuyu() {
         exib1.innerHTML = "";
         exib2.innerHTML = "";
         exib4.innerHTML = "";
-        exib5.innerHTML = ""; 
+        exib5.innerHTML = "";
         for (let index = 1; index < 21; index++) {
             img = document.createElement("img");
             img.src = "img/Mangas/Yu Yu Hakusho/cap3/" + index + ".jpg";
@@ -868,7 +868,7 @@ function choseyuyu() {
     }
 }
 
- 
+
 
 
 
